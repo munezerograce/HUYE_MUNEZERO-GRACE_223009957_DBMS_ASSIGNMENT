@@ -1,0 +1,241 @@
+mysql> create database ruhande;
+Query OK, 1 row affected (0.02 sec)
+
+mysql> use ruhande;
+Database changed
+mysql> create table ngoma (id
+    -> mysql> create table ngoma;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'mysql> create table ngoma' at line 2
+mysql>  create table ngoma(id int(16),first name char (15),last name char (17),gender char(2),province char(15),district char(13),sector char(16), cell char(15),e-mail varc(20),telphone var(10));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'name char (15),last name char (17),gender char(2),province char(15),district cha' at line 1
+mysql>  create table ngoma(id int(16),first_name char (15),last_name char (17),gender char(2),province char(15),district char(13),sector char(16), cell char(15),e_mail varc(20),telphone var(10));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'varc(20),telphone var(10))' at line 1
+mysql>  create table ngoma(id int(16),first_name char (15),last_name char (17),gender char(2),province char(15),district char(13),sector char(16), cell char(15),e_mail varc(20),telphone varchar(10));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'varc(20),telphone varchar(10))' at line 1
+mysql>  create table ngoma(id int(16),first_name char(15),last_name char(17),gender char(2),province char(15),district char(13),sector char(16), cell char(15),e_mail varc(20),telephone varchar(10));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'varc(20),telephone varchar(10))' at line 1
+mysql>  create table ngoma(id int(16),first_name char(15),last_name char(17),gender char(2),province char(15),district char(13),sector char(16), cell char(15),e_mail varchar(20),telephone varchar(10));
+Query OK, 0 rows affected, 1 warning (0.03 sec)
+
+mysql> insert into ngoma values(1,"grace","munezero","f","eastern","kirehe","nyamugali","bukora","muzzgtrace3@gmail.com","0782754723");
+Query OK, 1 row affected, 1 warning (0.01 sec)
+
+mysql> select *from ngoma;
++------+------------+-----------+--------+----------+----------+-----------+--------+----------------------+------------+
+| id   | first_name | last_name | gender | province | district | sector    | cell   | e_mail               | telephone  |
++------+------------+-----------+--------+----------+----------+-----------+--------+----------------------+------------+
+|    1 | grace      | munezero  | f      | eastern  | kirehe   | nyamugali | bukora | muzzgtrace3@gmail.co | 0782754723 |
++------+------------+-----------+--------+----------+----------+-----------+--------+----------------------+------------+
+1 row in set (0.00 sec)
+
+mysql> insert into ngoma values(2,"jule","kwizera","m","western","rutsiro","mahama","kazizi","muzzgtrac3@gmail.com","0782754923");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into ngoma values(3,"angelo","sanyu","f","eastern","rwempasha","rwempasha","rukorota","muzzgtrhu4@gmail.com","0782754903");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into ngoma values(4,"lea","gatesi","m","eastern","gatsibo","gatsibo","kizigur","muzzgtji4@gmail.com","0782754909");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into ngoma values(5,"divine","hirwa","f","north","musanze","rukara","kahi","gitzgtji4@gmail.com","0732754909");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into ngoma values(6,"brezze","kiza","m","north","ruhango","ruhango","sebeya","gitzgtkf4@gmail.com","0739754909");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into ngoma values(7,"kevin","keza","f","kigali","kicukiro","karuruma","gihogwe","tutzgtkf4@gmail.com","0729754909");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into ngoma values(8,"gasaro","patie","f","eastern","kayonza","rukara","gahini","putzgtkf4@gmail.com","0729754907");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into ngoma values(9,"gwiza","zakie","m","north","nyaruguru","muhura","shyogwe","ditzgtkf4@gmail.com","0789754907");
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into ngoma values(9,"ganza","wilson","m","north","huye","tumba","rango","kitzgtkf4@gmail.com","0789759907");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select *from ngoma;
++------+------------+-----------+--------+----------+-----------+-----------+----------+----------------------+------------+
+| id   | first_name | last_name | gender | province | district  | sector    | cell     | e_mail               | telephone  |
++------+------------+-----------+--------+----------+-----------+-----------+----------+----------------------+------------+
+|    1 | grace      | munezero  | f      | eastern  | kirehe    | nyamugali | bukora   | muzzgtrace3@gmail.co | 0782754723 |
+|    2 | jule       | kwizera   | m      | western  | rutsiro   | mahama    | kazizi   | muzzgtrac3@gmail.com | 0782754923 |
+|    3 | angelo     | sanyu     | f      | eastern  | rwempasha | rwempasha | rukorota | muzzgtrhu4@gmail.com | 0782754903 |
+|    4 | lea        | gatesi    | m      | eastern  | gatsibo   | gatsibo   | kizigur  | muzzgtji4@gmail.com  | 0782754909 |
+|    5 | divine     | hirwa     | f      | north    | musanze   | rukara    | kahi     | gitzgtji4@gmail.com  | 0732754909 |
+|    6 | brezze     | kiza      | m      | north    | ruhango   | ruhango   | sebeya   | gitzgtkf4@gmail.com  | 0739754909 |
+|    7 | kevin      | keza      | f      | kigali   | kicukiro  | karuruma  | gihogwe  | tutzgtkf4@gmail.com  | 0729754909 |
+|    8 | gasaro     | patie     | f      | eastern  | kayonza   | rukara    | gahini   | putzgtkf4@gmail.com  | 0729754907 |
+|    9 | gwiza      | zakie     | m      | north    | nyaruguru | muhura    | shyogwe  | ditzgtkf4@gmail.com  | 0789754907 |
+|    9 | ganza      | wilson    | m      | north    | huye      | tumba     | rango    | kitzgtkf4@gmail.com  | 0789759907 |
++------+------------+-----------+--------+----------+-----------+-----------+----------+----------------------+------------+
+10 rows in set (0.00 sec)
+
+mysql> update ngoma set id =10 where first_name = "ganza";
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> sect * from ngoma;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'sect * from ngoma' at line 1
+mysql> s
+    -> select * from ngoma;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 's
+select * from ngoma' at line 1
+mysql> select * from ngoma;
++------+------------+-----------+--------+----------+-----------+-----------+----------+----------------------+------------+
+| id   | first_name | last_name | gender | province | district  | sector    | cell     | e_mail               | telephone  |
++------+------------+-----------+--------+----------+-----------+-----------+----------+----------------------+------------+
+|    1 | grace      | munezero  | f      | eastern  | kirehe    | nyamugali | bukora   | muzzgtrace3@gmail.co | 0782754723 |
+|    2 | jule       | kwizera   | m      | western  | rutsiro   | mahama    | kazizi   | muzzgtrac3@gmail.com | 0782754923 |
+|    3 | angelo     | sanyu     | f      | eastern  | rwempasha | rwempasha | rukorota | muzzgtrhu4@gmail.com | 0782754903 |
+|    4 | lea        | gatesi    | m      | eastern  | gatsibo   | gatsibo   | kizigur  | muzzgtji4@gmail.com  | 0782754909 |
+|    5 | divine     | hirwa     | f      | north    | musanze   | rukara    | kahi     | gitzgtji4@gmail.com  | 0732754909 |
+|    6 | brezze     | kiza      | m      | north    | ruhango   | ruhango   | sebeya   | gitzgtkf4@gmail.com  | 0739754909 |
+|    7 | kevin      | keza      | f      | kigali   | kicukiro  | karuruma  | gihogwe  | tutzgtkf4@gmail.com  | 0729754909 |
+|    8 | gasaro     | patie     | f      | eastern  | kayonza   | rukara    | gahini   | putzgtkf4@gmail.com  | 0729754907 |
+|    9 | gwiza      | zakie     | m      | north    | nyaruguru | muhura    | shyogwe  | ditzgtkf4@gmail.com  | 0789754907 |
+|   10 | ganza      | wilson    | m      | north    | huye      | tumba     | rango    | kitzgtkf4@gmail.com  | 0789759907 |
++------+------------+-----------+--------+----------+-----------+-----------+----------+----------------------+------------+
+10 rows in set (0.00 sec)
+
+mysql> alter table ngoma add ages int(10);
+Query OK, 10 rows affected, 1 warning (0.09 sec)
+Records: 10  Duplicates: 0  Warnings: 1
+
+mysql> select *from ngoma;
++------+------------+-----------+--------+----------+-----------+-----------+----------+----------------------+------------+------+
+| id   | first_name | last_name | gender | province | district  | sector    | cell     | e_mail               | telephone  | ages |
++------+------------+-----------+--------+----------+-----------+-----------+----------+----------------------+------------+------+
+|    1 | grace      | munezero  | f      | eastern  | kirehe    | nyamugali | bukora   | muzzgtrace3@gmail.co | 0782754723 | NULL |
+|    2 | jule       | kwizera   | m      | western  | rutsiro   | mahama    | kazizi   | muzzgtrac3@gmail.com | 0782754923 | NULL |
+|    3 | angelo     | sanyu     | f      | eastern  | rwempasha | rwempasha | rukorota | muzzgtrhu4@gmail.com | 0782754903 | NULL |
+|    4 | lea        | gatesi    | m      | eastern  | gatsibo   | gatsibo   | kizigur  | muzzgtji4@gmail.com  | 0782754909 | NULL |
+|    5 | divine     | hirwa     | f      | north    | musanze   | rukara    | kahi     | gitzgtji4@gmail.com  | 0732754909 | NULL |
+|    6 | brezze     | kiza      | m      | north    | ruhango   | ruhango   | sebeya   | gitzgtkf4@gmail.com  | 0739754909 | NULL |
+|    7 | kevin      | keza      | f      | kigali   | kicukiro  | karuruma  | gihogwe  | tutzgtkf4@gmail.com  | 0729754909 | NULL |
+|    8 | gasaro     | patie     | f      | eastern  | kayonza   | rukara    | gahini   | putzgtkf4@gmail.com  | 0729754907 | NULL |
+|    9 | gwiza      | zakie     | m      | north    | nyaruguru | muhura    | shyogwe  | ditzgtkf4@gmail.com  | 0789754907 | NULL |
+|   10 | ganza      | wilson    | m      | north    | huye      | tumba     | rango    | kitzgtkf4@gmail.com  | 0789759907 | NULL |
++------+------------+-----------+--------+----------+-----------+-----------+----------+----------------------+------------+------+
+10 rows in set (0.00 sec)
+
+mysql> update ngoma set ages = 45 where id=1;
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update ngoma set ages = 23 where id=2;
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update ngoma set ages = 17 where id=3;
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update ngoma set ages = 37 where id=4;
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update ngoma set ages = 56 where id=5;
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update ngoma set ages = 90 where id=6;
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update ngoma set ages = 19 where id=7;
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update ngoma set ages = 33 where id=8;
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update ngoma set ages = 63 where id=9;
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update ngoma set ages = 13 where id=10;
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> seclect * from ngoma;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'seclect * from ngoma' at line 1
+mysql> select * from ngoma;
++------+------------+-----------+--------+----------+-----------+-----------+----------+----------------------+------------+------+
+| id   | first_name | last_name | gender | province | district  | sector    | cell     | e_mail               | telephone  | ages |
++------+------------+-----------+--------+----------+-----------+-----------+----------+----------------------+------------+------+
+|    1 | grace      | munezero  | f      | eastern  | kirehe    | nyamugali | bukora   | muzzgtrace3@gmail.co | 0782754723 |   45 |
+|    2 | jule       | kwizera   | m      | western  | rutsiro   | mahama    | kazizi   | muzzgtrac3@gmail.com | 0782754923 |   23 |
+|    3 | angelo     | sanyu     | f      | eastern  | rwempasha | rwempasha | rukorota | muzzgtrhu4@gmail.com | 0782754903 |   17 |
+|    4 | lea        | gatesi    | m      | eastern  | gatsibo   | gatsibo   | kizigur  | muzzgtji4@gmail.com  | 0782754909 |   37 |
+|    5 | divine     | hirwa     | f      | north    | musanze   | rukara    | kahi     | gitzgtji4@gmail.com  | 0732754909 |   56 |
+|    6 | brezze     | kiza      | m      | north    | ruhango   | ruhango   | sebeya   | gitzgtkf4@gmail.com  | 0739754909 |   90 |
+|    7 | kevin      | keza      | f      | kigali   | kicukiro  | karuruma  | gihogwe  | tutzgtkf4@gmail.com  | 0729754909 |   19 |
+|    8 | gasaro     | patie     | f      | eastern  | kayonza   | rukara    | gahini   | putzgtkf4@gmail.com  | 0729754907 |   33 |
+|    9 | gwiza      | zakie     | m      | north    | nyaruguru | muhura    | shyogwe  | ditzgtkf4@gmail.com  | 0789754907 |   63 |
+|   10 | ganza      | wilson    | m      | north    | huye      | tumba     | rango    | kitzgtkf4@gmail.com  | 0789759907 |   13 |
++------+------------+-----------+--------+----------+-----------+-----------+----------+----------------------+------------+------+
+10 rows in set (0.00 sec)
+
+mysql> alter table ngoma drop gender;
+Query OK, 10 rows affected (0.07 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+mysql> select *from ngoma;
++------+------------+-----------+----------+-----------+-----------+----------+----------------------+------------+------+
+| id   | first_name | last_name | province | district  | sector    | cell     | e_mail               | telephone  | ages |
++------+------------+-----------+----------+-----------+-----------+----------+----------------------+------------+------+
+|    1 | grace      | munezero  | eastern  | kirehe    | nyamugali | bukora   | muzzgtrace3@gmail.co | 0782754723 |   45 |
+|    2 | jule       | kwizera   | western  | rutsiro   | mahama    | kazizi   | muzzgtrac3@gmail.com | 0782754923 |   23 |
+|    3 | angelo     | sanyu     | eastern  | rwempasha | rwempasha | rukorota | muzzgtrhu4@gmail.com | 0782754903 |   17 |
+|    4 | lea        | gatesi    | eastern  | gatsibo   | gatsibo   | kizigur  | muzzgtji4@gmail.com  | 0782754909 |   37 |
+|    5 | divine     | hirwa     | north    | musanze   | rukara    | kahi     | gitzgtji4@gmail.com  | 0732754909 |   56 |
+|    6 | brezze     | kiza      | north    | ruhango   | ruhango   | sebeya   | gitzgtkf4@gmail.com  | 0739754909 |   90 |
+|    7 | kevin      | keza      | kigali   | kicukiro  | karuruma  | gihogwe  | tutzgtkf4@gmail.com  | 0729754909 |   19 |
+|    8 | gasaro     | patie     | eastern  | kayonza   | rukara    | gahini   | putzgtkf4@gmail.com  | 0729754907 |   33 |
+|    9 | gwiza      | zakie     | north    | nyaruguru | muhura    | shyogwe  | ditzgtkf4@gmail.com  | 0789754907 |   63 |
+|   10 | ganza      | wilson    | north    | huye      | tumba     | rango    | kitzgtkf4@gmail.com  | 0789759907 |   13 |
++------+------------+-----------+----------+-----------+-----------+----------+----------------------+------------+------+
+10 rows in set (0.00 sec)
+
+mysql> select *from ngoma where province = eastern  and ages = 37;
+ERROR 1054 (42S22): Unknown column 'eastern' in 'where clause'
+mysql> select *from ngoma where province = 'eastern' and ages = 37;
++------+------------+-----------+----------+----------+---------+---------+---------------------+------------+------+
+| id   | first_name | last_name | province | district | sector  | cell    | e_mail              | telephone  | ages |
++------+------------+-----------+----------+----------+---------+---------+---------------------+------------+------+
+|    4 | lea        | gatesi    | eastern  | gatsibo  | gatsibo | kizigur | muzzgtji4@gmail.com | 0782754909 |   37 |
++------+------------+-----------+----------+----------+---------+---------+---------------------+------------+------+
+1 row in set (0.00 sec)
+
+mysql> select *from ngoma where province = 'eastern' or ages = 37;
++------+------------+-----------+----------+-----------+-----------+----------+----------------------+------------+------+
+| id   | first_name | last_name | province | district  | sector    | cell     | e_mail               | telephone  | ages |
++------+------------+-----------+----------+-----------+-----------+----------+----------------------+------------+------+
+|    1 | grace      | munezero  | eastern  | kirehe    | nyamugali | bukora   | muzzgtrace3@gmail.co | 0782754723 |   45 |
+|    3 | angelo     | sanyu     | eastern  | rwempasha | rwempasha | rukorota | muzzgtrhu4@gmail.com | 0782754903 |   17 |
+|    4 | lea        | gatesi    | eastern  | gatsibo   | gatsibo   | kizigur  | muzzgtji4@gmail.com  | 0782754909 |   37 |
+|    8 | gasaro     | patie     | eastern  | kayonza   | rukara    | gahini   | putzgtkf4@gmail.com  | 0729754907 |   33 |
++------+------------+-----------+----------+-----------+-----------+----------+----------------------+------------+------+
+4 rows in set (0.00 sec)
+
+mysql> select id,first_name,last_name,ages from ngoma;
++------+------------+-----------+------+
+| id   | first_name | last_name | ages |
++------+------------+-----------+------+
+|    1 | grace      | munezero  |   45 |
+|    2 | jule       | kwizera   |   23 |
+|    3 | angelo     | sanyu     |   17 |
+|    4 | lea        | gatesi    |   37 |
+|    5 | divine     | hirwa     |   56 |
+|    6 | brezze     | kiza      |   90 |
+|    7 | kevin      | keza      |   19 |
+|    8 | gasaro     | patie     |   33 |
+|    9 | gwiza      | zakie     |   63 |
+|   10 | ganza      | wilson    |   13 |
++------+------------+-----------+------+
+10 rows in set (0.00 sec)
+
+mysql>
